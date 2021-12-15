@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    tools:context=".createCategoriaActivity">
+
+    <EditText
+        android:id="@+id/EDTCODIGOCATEGORIA_C"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:ems="10"
+        android:hint="Ingrese Codigo"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/EDTDESCRIPCIONCATEGORIA_C"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:ems="10"
+        android:hint="Ingrese Descripcion"
+        android:inputType="textPersonName" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/BTNAGREGARCATEGORIA"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:backgroundTint="#4FD828"
+            android:onClick="CrearCategoria"
+            android:text="AGREGAR"
+            app:icon="@android:drawable/ic_menu_add" />
+
+        <Button
+            android:id="@+id/BTNNUEVOCATEGORIA"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#43A047"
+            android:onClick="nuevoCategoria"
+            android:text="LIMPIAR"
+            app:icon="@android:drawable/ic_menu_delete" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/BTNLISTARCATEGORIA"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:backgroundTint="#039BE5"
+            android:onClick="listarCategorias"
+            android:text="LISTAR"
+            app:icon="?attr/actionModePasteDrawable" />
+
+        <Button
+            android:id="@+id/BTNBUSCARCATEGORIA"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FFB300"
+            android:onClick="BuscarCategoria"
+            android:text="BUSCAR"
+            app:icon="@android:drawable/ic_menu_search" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/BTNCERRARCATEGORIA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:backgroundTint="#ED0606"
+        android:onClick="cerrarCategoria"
+        android:text="CERRAR"
+        app:icon="@android:drawable/ic_menu_close_clear_cancel" />
+</LinearLayout>

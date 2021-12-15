@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        tools:context=".GetProductoActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/common_google_signin_btn_text_light_normal_background"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/EDTCODIGOPRODUCTO_B"
+                android:layout_width="63dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="Ingrese Codigo"
+                android:inputType="textPersonName" />
+
+            <Button
+                android:id="@+id/BTNBUSCARPRODUCTO_B"
+                android:layout_width="27dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#D81B60"
+                android:backgroundTintMode="add"
+                android:onClick="buscarProducto"
+                android:text="Buscar"
+                android:textAlignment="center"
+                app:icon="@android:drawable/ic_menu_search" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/EDTCODIGOPRODUCTO_E"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:ems="10"
+            android:enabled="false"
+            android:hint="Ingrese Codigo"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/EDTNOMBREPRODUCTO_E"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:ems="10"
+            android:hint="Ingrese Nombre"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/EDTDESCRIPCIONPRODUCTO_E"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:ems="10"
+            android:hint="Ingrese Descripcion"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/EDTESTADOPRODUCTO_E"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:ems="10"
+            android:hint="Ingrese Estado"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/EDTPRECIOPRODUCTO_E"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:ems="10"
+            android:hint="Ingrese Precio"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/EDTSTOCKPRODUCTO_E"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:ems="10"
+            android:hint="Ingrese Stock"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/EDTCODIGOCATGPRODUCTO_E"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:ems="10"
+            android:hint="Ingrese Categoria"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/EDTPROVEEPRODUCTO_E"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:ems="10"
+            android:hint="Ingrese Proveedor"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/BTNACTUALIZARPRODUCTO"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:backgroundTint="#43A047"
+            android:onClick="ActualizarProducto"
+            android:text="ACTUALIZAR"
+            app:icon="?attr/actionModeCopyDrawable" />
+
+    </LinearLayout>
+</ScrollView>

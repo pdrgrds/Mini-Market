@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        tools:context=".createProductoActivity">
+
+
+        <EditText
+            android:id="@+id/EDTCODIGOPRODUCTO_C"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:ems="10"
+            android:hint="Ingrese Codigo"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/EDTNOMBREPRODUCTO_C"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:ems="10"
+            android:hint="Ingrese Nombre"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/EDTDESCRIPCIONPRODUCTO_C"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:ems="10"
+            android:hint="Ingrese Descripcion"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/EDTESTADOPRODUCTO_C"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:ems="10"
+            android:hint="Ingrese Estado"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/EDTPRECIOPRODUCTO_C"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:ems="10"
+            android:hint="Ingrese Precio"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/EDTSTOCKPRODUCTO_C"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:ems="10"
+            android:hint="Ingrese Stock"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="Código categoria Producto *"
+            android:textColor="#020202" />
+
+        <Spinner
+            android:id="@+id/SPCATEGORIA_PRODUCTO"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:layout_margin="5dp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="Código Proveedor *"
+            android:textColor="#020202" />
+
+        <Spinner
+            android:id="@+id/SPPROVEEDOR_PRODUCTO"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:layout_margin="5dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/BTNAGREGARPRODUCTO"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:backgroundTint="#4FD828"
+                android:onClick="CrearProducto"
+                android:text="AGREGAR"
+                app:icon="@android:drawable/ic_menu_add" />
+
+            <Button
+                android:id="@+id/BTNNUEVOPRODUCTO"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#43A047"
+                android:onClick="nuevoProduccto"
+                android:text="Limpiar"
+                app:icon="@android:drawable/ic_menu_delete" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/BTNLISTARPRODUCTO"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:backgroundTint="#039BE5"
+                android:onClick="listarProducto"
+                android:text="LISTAR"
+                app:icon="?attr/actionModePasteDrawable" />
+
+            <Button
+                android:id="@+id/BTNBUSCARPRODUCTO"
+                android:layout_width="189dp"
+                android:layout_height="match_parent"
+                android:backgroundTint="#FFB300"
+                android:onClick="BuscarProducto"
+                android:text="BUSCAR"
+                app:icon="@android:drawable/ic_menu_search" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/BTNCERRARPRODUCTO"
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:backgroundTint="#ED0606"
+            android:onClick="cerrarProducto"
+            android:text="CERRAR"
+            app:icon="@android:drawable/ic_menu_close_clear_cancel" />
+
+    </LinearLayout>
+</ScrollView>

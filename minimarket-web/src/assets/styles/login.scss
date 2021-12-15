@@ -1,0 +1,26 @@
+.container__Login {
+    background: #272727;
+    //height: max-content;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    min-height: max-content !important;
+    padding: 20px 0;
+    
+    >div {
+        background: white;
+        min-height: 400px;
+        width: 300px;
+        border: none;
+        //border-radius: 40px;
+        padding: 20px 40px;
+
+        .content__formulario {
+            h1 { color: black; text-align: center; }
+            .MuiTextField-root { width: 100%; margin-bottom: 20px; }
+            .MuiButton-contained { width: 100%; background-color: #272727; }
+            p { text-align: right; a { color:#2787c7; } }
+            .MuiAlert-filledWarning { margin-top: -20px; margin-bottom: 15px; }
+        }
+    }
+}

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    tools:context=".createProveedorActivity">
+
+    <EditText
+        android:id="@+id/EDTCODIGOPROVEEDOR_C"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:ems="10"
+        android:hint="Ingrese Codigo"
+        android:inputType="textPersonName" />
+    <EditText
+        android:id="@+id/EDTNOMBREPROVEEDOR_C"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:ems="10"
+        android:hint="Ingrese Nombre"
+        android:inputType="textPersonName" />
+    <EditText
+        android:id="@+id/EDTDESCRIPCIONPROVEEDOR_C"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:ems="10"
+        android:hint="Ingrese Descripcion"
+        android:inputType="textPersonName" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/BTNAGREGARPROVEEDOR"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:backgroundTint="#4FD828"
+            android:onClick="CrearProveedor"
+            android:text="AGREGAR"
+            app:icon="@android:drawable/ic_menu_add" />
+
+        <Button
+            android:id="@+id/BTNNUEVOPROVEEDOR"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#43A047"
+            android:onClick="nuevoProveedor"
+            android:text="LIMPIAR"
+            app:icon="@android:drawable/ic_menu_delete" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/BTNLISTARPROVEEDOR"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:backgroundTint="#039BE5"
+            android:onClick="listarProveedores"
+            android:text="LISTAR"
+            app:icon="?attr/actionModePasteDrawable" />
+
+        <Button
+            android:id="@+id/BTNBUSCARPROVEEDOR"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FFB300"
+            android:onClick="BuscarProveedor"
+            android:text="BUSCAR"
+            app:icon="@android:drawable/ic_menu_search" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/BTNCERRARPROVEEDOR"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:backgroundTint="#ED0606"
+        android:onClick="cerrarProveedor"
+        android:text="CERRAR"
+        app:icon="@android:drawable/ic_menu_close_clear_cancel" />
+</LinearLayout>
